@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button class="menu-toggle">☰ Menu</button>
+    <nav class="menu">
+      <ul>
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#beef">Beef</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Our Menu</h1>
+    <section id="chicken">
+      <h2>Chicken</h2>
+      <p>Recipe: A delicious creamy chicken soup made with tender chicken, cream, and spices.</p>
+    </section>
+  </main>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const header = document.querySelector('header');
+
+    menuToggle.addEventListener('click', () => {
+      header.classList.toggle('menu-active');
+    });
+  </script>
+</body>
+
+</html>
